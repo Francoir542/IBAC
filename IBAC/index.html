@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Domicilio</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Normalize -->
+  <link rel="stylesheet" href="normalize/normalize.css" />
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <!-- Sidebar Izquierda -->
+    <section class="sidebar left">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos <strong>Laboratorio IBAC</strong>, especializados en análisis clínicos de alta complejidad</p>
+      <p>Brindamos servicios rápidos y confiables</p>
+      <p>Realizamos extracciones a domicilio para su comodidad 🏠</p>
+    </section>
+    
+    <!-- Contenedor Principal -->
+    <section class="container">
+      <h1>🏍️ Calculadora de Domicilio</h1>
+      <input type="number" id="kmInput" placeholder="¿Cuántos kilómetros hay?" min="0" />
+      <button onclick="calcularPrecio()">Calcular Precio</button>
+      <div id="resultado" class="resultado oculto"></div>
+    </section>
+    
+    <!-- Sidebar Derecha -->
+    <section class="sidebar right">
+      <h2>Contacto</h2>
+      <p>
+        <a href="https://wa.me/542657332841" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </p>
+      <p>
+        <a href="https://www.facebook.com/profile.php?id=100063635135318" target="_blank">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+      </p>
+      <p>
+        <a href="https://www.instagram.com/ibaclaboratorio?igsh=MWh0ZXloc2o0b3hzYg==" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Laboratorio de Análisis Clínicos. Todos los derechos reservados.</p>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
